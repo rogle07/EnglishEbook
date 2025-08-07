@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>अंग्रेजी कसरी सिक्ने - ३० दिनमा</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #000000, #0f2027);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      overflow-x: hidden;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .book-img {
+      max-width: 300px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    /* Media query for mobile devices */
+    @media (max-width: 768px) {
+      .book-img {
+        max-width: 150px; /* Reduced size for mobile */
+      }
+    }
+    #fish {
+      position: absolute;
+      pointer-events: none;
+      width: 80px;
+      height: 80px;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e0/Orange_fish_icon.svg');
+      background-size: cover;
+      transition: transform 0.1s linear;
+    }
+    .btn-buy {
+      background-color: #00c853;
+      border: none;
+      padding: 12px 24px;
+      font-size: 18px;
+      border-radius: 30px;
+      transition: 0.3s ease;
+    }
+    .btn-buy:hover {
+      background-color: #00e676;
+      transform: scale(1.05);
+    }
+    .details {
+      margin-top: 50px;
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: left;
+    }
+    .details h2 {
+      color: #00e676;
+      margin-bottom: 20px;
+    }
+    .details ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .details li::before {
+      content: "✔ ";
+      color: #00c853;
+    }
+  </style>
+</head>
+<body>
+  <div id="fish"></div>
+  <div class="container hero">
+    <h1 class="display-4 mb-4">३० दिनमा अंग्रेजी कसरी सिक्ने</h1>
+    <img src="ebookcovern.jpg" alt="पुस्तकको कभर" class="book-img mb-4" />
+    <p class="lead">नेपाली भाषीहरूलाई सजिलै अंग्रेजी सिकाउनको लागि तयार गरिएको उत्कृष्ट गाइड।</p>
+    <button class="btn btn-buy" onclick="startPayment()">पुस्तक प्राप्त गर्नुहोस् - ₹४९</button>
+  </div>
+
+  <div class="container details">
+    <h2>पुस्तकका विशेषताहरू:</h2>
+    <ul>
+      <li>६३ पृष्ठको संक्षिप्त तर प्रभावकारी जानकारी</li>
+      <li>नेपाली र अंग्रेजी दुवैमा उदाहरणहरू</li>
+      <li>प्रारम्भिकदेखि मध्यम स्तरसम्मको अंग्रेजी सिकाइ</li>
+      <li>व्याकरण, शब्दावली, बोलचालका वाक्यहरू र दैनिक प्रयोग</li>
+      <li>स्कूल, कलेज, जागिर वा विदेश जानेहरूका लागि आदर्श</li>
+      <li>अनलाइन पढाइका लागि सबैभन्दा उपयोगी डिजिटल पुस्तक</li>
+      <li>अभ्यास प्रश्नहरू, बोल्ने अभ्यास र उत्तरहरू सहित</li>
+    </ul>
+    <h2>यो पुस्तकबाट तपाईंले के सिक्नुहुनेछ?</h2>
+    <ul>
+      <li>अंग्रेजीका ८ भागहरू (Parts of Speech) लाई सरल भाषामा बुझ्ने</li>
+      <li>सही शब्दहरूको प्रयोग र नेपालीबाट अंग्रेजीमा अनुवाद</li>
+      <li>अंग्रेजी बोल्ने र बुझ्ने आत्मविश्वास</li>
+      <li>शुद्ध उच्चारण र व्याकरणमा पकड</li>
+    </ul>
+    <p class="mt-4">यो पुस्तक डिजिटल PDF फर्म्याटमा छ। यो पुस्तक खरिद गरेपछि तपाईंलाई अंग्रेजी आउनेछ।
+अब तपाईंलाई अंग्रेजी सिक्नबाट कसैले रोक्न सक्दैन।
+यो तपाईंको पहिलो र सबैभन्दा सजिलो कदम हो — अब कुनै बहाना छैन।
+तपाईंको सपनाको भाषा — अब तपाईंको मुठीमा।</p>
+    <p><strong>मूल्य:</strong> ₹४९ मात्र</p>
+    <p><strong>फर्म्याट:</strong> PDF (डिजिटल)</p>
+    <p><strong>पृष्ठ:</strong> ६३</p>
+  </div>
+
+  <script>
+    function startPayment() {
+      window.open("https://rzp.io/rzp/cnujADJ", "_blank");
+    }
+
+    const fish = document.getElementById('fish');
+    if (fish) {
+      document.addEventListener('mousemove', (e) => {
+        fish.style.left = e.pageX + 'px';
+        fish.style.top = e.pageY + 'px';
+      });
+    }
+  </script>
+</body>
+</html>
